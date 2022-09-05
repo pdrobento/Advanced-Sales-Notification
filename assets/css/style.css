@@ -1,0 +1,93 @@
+/* Font import */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Variables */
+
+:root {
+  /* Colors */
+  --header-gradient: linear-gradient(180deg, #102347 0%, #000000 100%);
+  --sales-title: #676fff;
+  --white: #ffffff;
+  --border-color: #384459;
+
+  /* Fonts size*/
+
+  --regular-size: 1.12rem; /* 18 px*/
+  --small-size: 0.87rem; /* 14 px*/
+  --title-size: 1.5rem; /* 24 px*/
+}
+
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+/* Style */
+
+body {
+  background-color: #000000;
+}
+
+header {
+  background: var(--header-gradient);
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+}
+
+.asn-header {
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+}
+
+.asn-header img {
+  margin-bottom: 15px;
+}
+
+#asn-header-subtitle {
+  font-size: var(--small-size);
+}
+
+#asn-header-title {
+  font-size: var(--title-size);
+}
+
+.asn-main-card {
+  background: #283142;
+  border-radius: 10px;
+  padding: 30px 10px;
+  margin: 40px 10px;
+}
+
+.asn-card-title {
+  color: var(--sales-title);
+  font-size: var(--title-size);
+  margin-bottom: 20px;
+}
+
+.asn-inputs-style {
+  width: 100%;
+  padding: 12px 21px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  border: 2px solid #384459;
+  background: #1b2531;
+}
